@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Brand + neutral palette (from PRD design tokens) */
+  --color-primary: #24a57c;
+  --color-primary-dark: #1b7a5c;
+  --color-primary-light: #e8f5f0;
+  --color-ink: #202124;
+  --color-muted: #5f6368;
+  --color-line: #e3e6e4;
+
+  /* Typography — mapped to next/font variables from layout.tsx */
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+/* ---------- Signature motion: ambient background drift, terminal cursor, hero status dot ---------- */
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(40px, 50px) scale(1.08);
+  }
+  66% {
+    transform: translate(-30px, 20px) scale(0.95);
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.75);
+  }
+}
+
+@layer utilities {
+  .animate-drift {
+    animation: drift 26s ease-in-out infinite;
+  }
+  .animate-blink {
+    animation: blink 1s step-start infinite;
+  }
+  .animate-pulse-dot {
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-drift,
+  .animate-blink,
+  .animate-pulse-dot {
+    animation: none;
+  }
+}
