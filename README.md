@@ -1,4 +1,4 @@
-# Arya Wicaksana — Portfolio (Next.js)
+# Made Widnyana — Portfolio (Next.js)
 
 Personal portfolio website built from the PRD, using **Next.js 16 (App Router)**, **TypeScript**, and **Tailwind CSS v4**.
 

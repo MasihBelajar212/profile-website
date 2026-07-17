@@ -16,9 +16,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Arya Wicaksana — Website Developer",
+  title: "Made Widnyana — Website Developer",
   description:
-    "Portfolio Arya Wicaksana, Website Developer yang fokus pada performa, kejelasan desain, dan kode yang mudah dirawat.",
+    "Portfolio Made Widnyana, Website Developer yang fokus pada performa, kejelasan desain, dan kode yang mudah dirawat.",
 };
 
 export default function RootLayout({

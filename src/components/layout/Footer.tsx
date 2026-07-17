@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="border-t border-line py-10">
       <div className="mx-auto flex max-w-[1320px] flex-wrap items-center justify-between gap-3 px-6 sm:px-10">
         <p className="text-[13.5px] text-muted">
-          © 2026 Arya Wicaksana. Dibuat dengan Next.js & sedikit kopi.
+          © 2026 Made Widnyana. Dibuat dengan Next.js & sedikit kopi.
         </p>
         <p className="text-[13.5px] text-muted">
           Kembali ke{" "}

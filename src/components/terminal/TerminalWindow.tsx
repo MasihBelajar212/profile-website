@@ -24,7 +24,7 @@ export function TerminalWindow() {
       <div className="min-h-[220px] px-5 pb-7 pt-[22px] font-mono text-[13.5px] text-[#B8E5D3]">
         <div className="mb-2.5 text-[#8CA69B]">$ whoami</div>
         <div className="mb-4 text-[#8CA69B]">
-          &gt; <span className="text-[#5FD3A4]">arya</span>_wicaksana
+          &gt; <span className="text-[#5FD3A4]">made</span>_widnyana
         </div>
         <div className="mb-2.5 text-[#8CA69B]">$ skills --list</div>
         <div className="text-[#8CA69B]">
